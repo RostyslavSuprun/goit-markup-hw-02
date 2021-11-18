@@ -1,0 +1,73 @@
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  color: #000000;
+  margin-left: 215px;
+}
+.logo-design {
+  color: #2196f3;
+}
+.header,
+.nav,
+.nav-list,
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mail-to,
+.phone,
+.info-item,
+.info-list,
+.nav-item,
+.nav-menu {
+  display: flex;
+  margin-left: 25px;
+  text-decoration: none;
+}
+.phone {
+  margin-right: 215px;
+}
+
+.nav-menu {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mail-to,
+.phone {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.nav-menu:hover,
+.mail-to:hover,
+.phone:hover {
+  color: #2196f3;
+}
+
+main,
+header,
+footer {
+  font-family: Roboto;
+  font-style: normal;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

@@ -1,3 +1,27 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #e5e5e5;
+  --background-color: #2f303a;
+}
+body {
+  width: 1600px;
+}
+
+.list {
+  list-style: none;
+}
+a,
+body,
+main,
+footer {
+  font-family: Roboto;
+  color: var(--title-text-color);
+  text-decoration: none;
+  list-style: none;
+}
 /* header styles */
 .logo {
   font-family: Raleway;
@@ -9,39 +33,18 @@
   color: #000000;
   margin-left: 215px;
 }
-.logo-design {
-  color: #2196f3;
-}
-.header,
-.nav,
-.nav-list,
-.nav-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.mail-to,
-.phone,
-.info-item,
-.info-list,
-.nav-item,
-.nav-menu {
-  display: flex;
-  margin-left: 25px;
-  text-decoration: none;
-}
-.phone {
-  margin-right: 215px;
+.design {
+  color: var(--accent-color);
 }
 
-.nav-menu {
+.nav.link {
   display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .mail-to,
 .phone {
@@ -52,25 +55,22 @@
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
-.nav-menu:hover,
+.nav.menu:hover,
 .mail-to:hover,
-.phone:hover {
-  color: #2196f3;
+.phone:hover,
+.nav.menu:focus,
+.mail-to:focus,
+.phone:focus {
+  color: var(--accent-color);
 }
 
-main,
-header,
-footer {
-  font-family: Roboto;
-  font-style: normal;
-}
 .banner {
   width: 1600px;
   height: 600px;
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 h1 {
   font-weight: 900;
@@ -79,40 +79,38 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-text-color);
   padding-top: 200px;
 }
-.button-center {
+.button.div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.order-button {
+.order.button {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--accent-color);
   border-radius: 4px;
 }
-.order-button-text {
-  font-style: normal;
+.order.button.text {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 /* особливості */
-.abilities-list {
+.abilities.list {
   margin-top: 93px;
   padding-left: 215px;
   padding-right: 215px;
 }
 
-.abilities-list,
+.abilities.list,
 .abilities {
   text-decoration: none;
   display: flex;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -120,15 +118,54 @@ h1 {
   text-transform: uppercase;
 }
 .abilities-description {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
-  text-align: start;
-  align-items: stretch;
+  color: var(--primary-text-color);
 }
 h2 {
   text-align: center;
+}
+
+.footer {
+  width: 1600px;
+  height: 252px;
+  background-color: var(--background-color);
+  color: var(--secondary-text-color);
+}
+.footer a.mail-to,
+.footer a.phone {
+  color: hsla(0, 0%, 100%, 0, 6);
+}
+.footer a.logo {
+  color: var(--secondary-text-color);
+}
+
+/* flex items */
+.header,
+.nav,
+.nav.list,
+.nav.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mail-to,
+.phone,
+.info.item,
+.info.list,
+.nav.item,
+.nav.menu {
+  display: flex;
+  margin-left: 25px;
+  text-decoration: none;
+}
+.info.list {
+  align-content: center;
+}
+.phone {
+  margin-right: 215px;
+}
+.info.item {
+  justify-content: flex-end;
 }

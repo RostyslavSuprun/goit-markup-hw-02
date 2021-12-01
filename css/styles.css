@@ -6,10 +6,11 @@
   --primary-white-color: #e5e5e5;
   --background-color: #2f303a;
 }
-body {
-  width: 1600px;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
-
 .list {
   list-style: none;
 }
@@ -23,6 +24,16 @@ footer {
   list-style: none;
 }
 /* header styles */
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 4px solid pink;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+}
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -31,7 +42,6 @@ footer {
   line-height: 1.19em;
   text-decoration: none;
   color: #000000;
-  margin-left: 215px;
 }
 .design {
   color: var(--accent-color);
@@ -45,6 +55,10 @@ footer {
   line-height: 1.14em;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+.info.list {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .mail-to,
 .phone {
@@ -71,8 +85,11 @@ footer {
   width: 1600px;
   height: 600px;
   background-color: var(--background-color);
+  outline: 4px solid pink;
 }
 h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
@@ -81,6 +98,7 @@ h1 {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   padding-top: 200px;
+  outline: 4px solid pink;
 }
 .button.div {
   display: flex;
@@ -88,8 +106,7 @@ h1 {
   align-items: center;
 }
 .order.button {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   background: var(--accent-color);
   font-family: inherit;
   font-style: normal;
@@ -161,8 +178,7 @@ h2 {
 }
 
 .filter {
-  width: 73px;
-  height: 38px;
+  padding: 6px 22px;
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -172,7 +188,6 @@ h2 {
 .applications,
 .dezign,
 .marketing {
-  background-color: #f5f4fa;
   border-style: none;
   box-shadow: none;
 }
@@ -181,9 +196,13 @@ h2 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62em;
-  background-color: #f5f4fa;
+  background-color: #ffffff;
   box-shadow: none;
   cursor: pointer;
+}
+.applications {
+  text-align: center;
+  min-width: 145px;
 }
 .filter {
   width: 128px;
